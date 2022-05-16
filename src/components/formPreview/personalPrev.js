@@ -1,10 +1,12 @@
+import Personal from "../form/personalInfo";
+
 import { Component } from "react";
 
-class Personal extends Component {
+class PersonalPrev extends Component {
     render(){
         return(
             <>
-                <div className="personalContainer">
+                <div className="experienceContainer">
                     <h1 className="personalTitle">Personal Information</h1>
                     <input name="name" type='text' placeholder="Full Name"></input>
                     <input name="title" type='text' placeholder="Title"></input>
@@ -18,4 +20,4 @@ class Personal extends Component {
     }
 }
 
-export default Personal
+export default PersonalPrev

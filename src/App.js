@@ -1,7 +1,7 @@
 import Header from "./components/header";
-import Personal from "./components/personalInfo";
-import Education from "./components/education";
-import Experience from "./components/experience";
+import Personal from "./components/form/personalInfo";
+import Education from "./components/form/education";
+import Experience from "./components/form/experience";
 
 function App() {
     return (

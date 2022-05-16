@@ -18,3 +18,13 @@
     font-size: 38px;
 
 }
+.cvForm{
+    background-color: bisque;
+    width: 50%;
+    height: 80vh;
+    margin: 28px;
+}
+.cvForm input{
+    display: flex;
+    margin: 15px;
+}

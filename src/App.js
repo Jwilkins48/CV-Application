@@ -1,15 +1,25 @@
 import Header from "./components/header";
 import Personal from "./components/personalInfo";
 import Education from "./components/education";
+import Experience from "./components/experience";
 
 function App() {
     return (
       <>
         <Header />
-        <form className="cvForm">
-          <Personal />
-          <Education />
-        </form>
+        <div className="formContainer">
+          <form className="cvForm">
+            <Personal />
+            <Experience />
+            <Education />
+          </form>
+
+          <form className="cvPreview">
+            <Personal />
+            <Experience />
+            <Education />
+          </form>
+        </div>
         
       </>
     );

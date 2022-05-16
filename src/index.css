@@ -18,13 +18,22 @@
     font-size: 38px;
 
 }
+.formContainer{
+    display: flex;
+}
 .cvForm{
     background-color: bisque;
     width: 50%;
     height: 80vh;
     margin: 28px;
 }
-.cvForm input{
+.cvPreview{
+    background-color:#c6a6e4;
+    width: 50%;
+    height: 80vh;
+    margin: 28px;
+}
+input{
     display: flex;
     margin: 15px;
 }

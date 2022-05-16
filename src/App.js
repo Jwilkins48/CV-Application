@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Personal from "./components/personalInfo";
+import Education from "./components/education";
 
 function App() {
     return (
@@ -7,6 +8,7 @@ function App() {
         <Header />
         <form className="cvForm">
           <Personal />
+          <Education />
         </form>
         
       </>

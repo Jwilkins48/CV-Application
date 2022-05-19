@@ -1,22 +1,45 @@
-import { Component } from "react";
+import { useState } from 'react';
 
-class Personal extends Component {
 
-    render(){
-        return(
-            <>
-                <div className="personalContainer">
-                    <h1 className="personalTitle">Personal Information</h1>
-                    <input name="name" type='text' placeholder="Full Name"></input>
-                    <input name="title" type='text' placeholder="Title"></input>
-                    <input name="address" type='text' placeholder="Address"></input>
-                    <input name="phone" type='text' placeholder="Phone"></input>
-                    <input name="email" type='text' placeholder="Email"></input>
-                    <input name="description" type='text' placeholder="Description"></input>
-                </div>
-            </>
-        )
+function Personal({addPersonal}){
+
+    const [personalInfo, setPersonalInfo] = useState({
+        name: "",
+        title: "",
+        address: "",
+        email: "",
+    });
+
+    const handleChange = (e) => {
+        setPersonalInfo({ ...personalInfo, [e.target.name]: e.target.value})
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        addPersonal(personalInfo);
+        setPersonalInfo({
+            name: "",
+            title: "",
+            address: "",
+            email: "",
+        })
     }
+
+    return(
+        <>
+            <div className="personalContainer">
+                <form onSubmit={handleSubmit}>
+                <h1 className="personalTitle">Personal Information</h1>
+                <input name="name" id="name" type='text' placeholder="Full Name" onChange={handleChange} value={personalInfo.name} ></input>
+                <input name="title" id="title" type='text' placeholder="Title" onChange={handleChange} value={personalInfo.title}></input>
+                <input name="address" id="address" type='text' placeholder="Address" onChange={handleChange} value={personalInfo.address}></input>
+                <input name="email" id="email" type='text' placeholder="Email" onChange={handleChange} value={personalInfo.email}></input>
+                <button type='submit'>Save</button>
+                </form>
+            </div>
+        </>
+    )
 }
 
 export default Personal

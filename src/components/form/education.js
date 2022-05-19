@@ -5,12 +5,12 @@ class Education extends Component {
         return(
             <>
                 <div className="educationContainer">
-                    <h1 className="educationTitle">Education</h1>
-                    <input name="school" type='text' placeholder="School"></input>
-                    <input name="city" type='text' placeholder="City"></input>
-                    <input name="degree" type='text' placeholder="Degree"></input>
-                    <input name="from" type='text' placeholder="From"></input>
-                    <input name="till" type='text' placeholder="Till"></input>
+                    <h1 className="educationTitle">Education</h1><button>Save</button>
+                    <input id="school" name="school" type='text' placeholder="School"></input>
+                    <input id="educationCity" name="city" type='text' placeholder="City"></input>
+                    <input id="degree" name="degree" type='text' placeholder="Degree"></input>
+                    <input id="educationFrom" name="from" type='text' placeholder="From"></input>
+                    <input id="educationTill" name="till" type='text' placeholder="Till"></input>
                 </div>
             </>
         )

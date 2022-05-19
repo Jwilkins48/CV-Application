@@ -1,23 +1,14 @@
-import Personal from "../form/personalInfo";
-
-import { Component } from "react";
-
-class PersonalPrev extends Component {
-    render(){
-        return(
-            <>
-                <div className="experienceContainer">
-                    <h1 className="personalTitle">Personal Information</h1>
-                    <input name="name" type='text' placeholder="Full Name"></input>
-                    <input name="title" type='text' placeholder="Title"></input>
-                    <input name="address" type='text' placeholder="Address"></input>
-                    <input name="phone" type='text' placeholder="Phone"></input>
-                    <input name="email" type='text' placeholder="Email"></input>
-                    <input name="description" type='text' placeholder="Description"></input>
+export default function PersonalList({personal_info}){
+    return(
+        <div>
+            {personal_info.map((personal) => (
+                <div className="card" key={personal.phoneNumber}>
+                    <p className="card-name">{personal.name}</p>
+                    <p>{personal.title}</p>
+                    <p>{personal.address}</p>
+                    <p>{personal.email}</p>
                 </div>
-            </>
-        )
-    }
+            ))}
+        </div>
+    );
 }
-
-export default PersonalPrev

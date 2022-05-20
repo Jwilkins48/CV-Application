@@ -5,6 +5,7 @@ import Experience from "./components/form/experience";
 import PersonalPrev from "./components/formPreview/personalPrev";
 import { useState } from 'react';
 import EducationPrev from "./components/formPreview/EducationPrev";
+import ExperiencePrev from './components/formPreview/ExperiencePrev';
 
 
 function App() {
@@ -28,12 +29,13 @@ function App() {
         <div className="formContainer">
           <div className="cvForm">
             <Personal addPersonal={addPersonal} />
-            <Experience />
+            <Experience addExperience ={addExperience} />
             <Education addEducation={addEducation} />
           </div>
         
           <div className="cvPreview">
-            <PersonalPrev personal_info = {personal_info}/>
+            <PersonalPrev personal_info = {personal_info} />
+            <ExperiencePrev experience_info = {experience_info} />
             <EducationPrev education_info = {education_info} />
           </div>
         </div>

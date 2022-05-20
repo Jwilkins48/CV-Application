@@ -7,6 +7,7 @@
 body{
     background-color: #e7e0e0;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 .headerContainer{
     background-color: #6988ee;
@@ -31,7 +32,7 @@ body{
     color: #ffc4ad;
     border-radius: 5px;
     width: 50%;
-    height: 80vh;
+    height: 85vh;
     margin: 28px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -41,7 +42,7 @@ body{
     background-color:#8992ad;
     border-radius: 5px;
     width: 50%;
-    height: 80vh;
+    height: 85vh;
     margin: 28px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -51,6 +52,7 @@ body{
 }
 .card-name{
     font-size: 45px;
+    color: #f7e8e2;
 }
 .nameContainer{
     margin: 5px 0;
@@ -65,4 +67,18 @@ input{
     height: 25px;
     border: 1px solid white;
     border-radius: 5px;
+}
+.experiencePrevTitle{
+    margin: 15px;
+    text-decoration: underline;
+    color: #f7e8e2;
+}
+.experience{
+    margin: 5px 0;
+}
+.expPosition{
+    color: #f7e8e2;;
+}
+.experienceInform{
+    margin: 15px;
 }

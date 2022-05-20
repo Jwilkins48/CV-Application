@@ -4,11 +4,11 @@ export default function EducationList({education_info}){
         <div>
             {education_info.map((education) => (
                 <div key={education.city}>
-                    <p>{education.school}</p>
-                    <p>{education.city}</p>
-                    <p>{education.degree}</p>
-                    <p>{education.from}</p>
-                    <p>{education.till}</p>
+                    <h1 className="experiencePrevTitle">Education</h1>
+                    <p className="education">Education from <span className="expPosition">{education.school}</span></p>
+                    <p className="education">location in <span className="expPosition">{education.city}</span></p>
+                    <p className="education">for a degree in <span className="expPosition">{education.degree}</span></p>
+                    <p className="education"><span className="expPosition">{education.from}</span> - <span className="expPosition">{education.till}</span></p>
                 </div>
             ))}
         </div>

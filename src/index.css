@@ -45,6 +45,19 @@ body{
     margin: 28px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.card{
+    margin: 10px 18px;
+    font-size: 16px;
+}
+.card-name{
+    font-size: 45px;
+}
+.nameContainer{
+    margin: 5px 0;
+}
+.addressDisplay{
+    margin: 5px 0;
+}
 input{
     display: flex;
     margin: 15px 5px;

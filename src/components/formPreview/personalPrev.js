@@ -3,10 +3,12 @@ export default function PersonalList({personal_info}){
         <div>
             {personal_info.map((personal) => (
                 <div className="card" key={personal.phoneNumber}>
-                    <p className="card-name">{personal.name}</p>
-                    <p>{personal.title}</p>
-                    <p>{personal.address}</p>
-                    <p>{personal.email}</p>
+                    <div className="nameContainer">
+                        <h1 className="card-name">{personal.name}</h1>
+                        <h2>{personal.title}</h2>
+                    </div>
+                    <p className="addressDisplay">{personal.address}</p>
+                    <p>{personal.email}</p><br></br><hr></hr>
                 </div>
             ))}
         </div>

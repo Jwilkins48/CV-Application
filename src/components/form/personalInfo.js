@@ -30,12 +30,11 @@ function Personal({addPersonal}){
         <>
             <div className="personalContainer">
                 <form onSubmit={handleSubmit}>
-                <h1 className="personalTitle">Personal Information</h1>
+                <div className='titleBtnContainer'><h1 className="personalTitle">Personal Information</h1><button className='saveBtn' type='submit'>Save</button></div>
                     <input name="name" id="name" type='text' placeholder="Full Name" onChange={handleChange} value={personalInfo.name} ></input>
                     <input name="phone" id="phone" type='text' placeholder="Phone Number" onChange={handleChange} value={personalInfo.phone}></input>
                     <input name="address" id="address" type='text' placeholder="Address" onChange={handleChange} value={personalInfo.address}></input>
                     <input name="email" id="email" type='text' placeholder="Email" onChange={handleChange} value={personalInfo.email}></input>
-                    <button className='saveBtn' type='submit'>Save</button>
                 </form>
             </div>
         </>

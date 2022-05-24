@@ -35,7 +35,7 @@ function Experience({addExperience}){
                     <input id="city" name="city" type='text' placeholder="City" onChange={handleChange} value={experienceInfo.city}></input>
                     <input id="experienceFrom" name="from" type='text' placeholder="From" onChange={handleChange} value={experienceInfo.from}></input>
                     <input id="experienceTill" name="till" type='text' placeholder="Till" onChange={handleChange} value={experienceInfo.till}></input>
-                    <button type='submit'>Save</button>
+                    <button className='saveBtn' type='submit'>Save</button>
                     </form>
                 </div>
             </>

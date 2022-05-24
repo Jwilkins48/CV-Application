@@ -36,7 +36,7 @@ function Education({addEducation}){
                     <input id="degree" name="degree" type='text' placeholder="Degree" onChange={handleChange} value={educationInfo.degree}></input>
                     <input id="educationFrom" name="from" type='text' placeholder="From" onChange={handleChange} value={educationInfo.from}></input>
                     <input id="educationTill" name="till" type='text' placeholder="Till" onChange={handleChange} value={educationInfo.till}></input>
-                    <button type='submit'>Save</button>
+                    <button className='saveBtn' type='submit'>Save</button>
                 </form>
             </div>
         </>
